@@ -24,9 +24,9 @@ const toastVariants = cva(
   {
     variants: {
       variant: {
-        default: "border bg-white text-slate-950 dark:bg-slate-950 dark:text-slate-50",
+        default: "border border-accent-hover bg-accent text-primary dark:bg-slate-950 dark:text-slate-50",
         destructive:
-          "destructive group border-red-500 bg-red-500 text-slate-50 dark:border-red-900 dark:bg-red-900 dark:text-slate-50",
+          "destructive group border-red-500 bg-red-500 text-white dark:border-red-900 dark:bg-red-900 dark:text-white",
       },
     },
     defaultVariants: {
@@ -60,7 +60,7 @@ const ToastClose = React.forwardRef(({ className, ...props }, ref) => (
   <ToastPrimitives.Close
     ref={ref}
     className={cn(
-      "absolute right-2 top-2 rounded-md p-1 text-slate-950/50 opacity-0 transition-opacity hover:text-slate-950 focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-red-50 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600 dark:text-slate-50/50 dark:hover:text-slate-50",
+      "absolute right-2 top-2 rounded-md p-1 text-primary/70 opacity-0 transition-opacity hover:text-primary focus:opacity-100 focus:outline-none focus:ring-2 group-hover:opacity-100 group-[.destructive]:text-red-300 group-[.destructive]:hover:text-white group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600 dark:text-slate-50/50 dark:hover:text-white",
       className
     )}
     toast-close=""
