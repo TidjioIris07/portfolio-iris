@@ -3,7 +3,7 @@ import path from 'path';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const filePath = path.join(process.cwd(), 'public/pdf/yourfile.pdf');
+  const filePath = path.join(process.cwd(), 'public/pdf/CV_Iris-RETSOFA.pdf');
 
   // Ensure the file exists
   if (!fs.existsSync(filePath)) {
@@ -16,7 +16,7 @@ export async function GET() {
   return new Response(fileBuffer, {
     headers: {
       'Content-Type': 'application/pdf',
-      'Content-Disposition': 'attachment; filename="CV_Odilon.pdf"'
+      'Content-Disposition': 'attachment; filename="CV_Iris-RETSOFA.pdf"'
     }
   });
 }
