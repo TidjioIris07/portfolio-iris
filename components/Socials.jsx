@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const social = [
     { icon: <FaGithub />, path: "https://github.com/TidjioIris07" },
-    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/r-tidjio-iris-retsofa-989a88316/" },
+    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/iris-retsofa" },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
