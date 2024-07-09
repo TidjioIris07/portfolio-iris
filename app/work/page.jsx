@@ -18,30 +18,40 @@ const projects = [
     {
         num: '01',
         category: 'frontend',
-        title: "project 1",
-        description: "Ut adipisicing esse cillum enim quis ipsum dolore sunt eu ex non ad.",
-        stack: [{name:"Html 5"}, {name: "Css 3"}, {name: "Javascript"}],
+        title: "My Portfolio",
+        description: "A show case of my skills, project and professional journey as a developper",
+        stack: [{name:"NextJs"}, {name: "Tailwind CSS"}, {name: "Framer Motion"}],
         image: "/assets/work/thumb1.png",
-        live: "",
-        github: "",
+        live: "/",
+        github: "https://github.com/TidjioIris07/portfolio-iris",
     },
     {
         num: '02',
         category: 'fullstack',
-        title: "project 2",
-        description: "Ut adipisicing esse cillum enim quis ipsum dolore sunt eu ex non ad.",
-        stack: [{name:"Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}],
+        title: "Case Cobra",
+        description:"A web application designed for selling customized phone cases for iPhones. This platform allows users to personalize their phone cases with unique designs, providing a seamless and enjoyable shopping experience.",
+        stack: [{name:"NextJs"}, {name: "Typescript"}, {name: "PostgreSQL"}, {name: "Prisma"}, {name: "Tailwind CSS"}],
         image: "/assets/work/thumb2.png",
         live: "",
         github: "",
     },
     {
         num: '03',
-        category: 'frontend',
-        title: "project 1",
-        description: "Ut adipisicing esse cillum enim quis ipsum dolore sunt eu ex non ad.",
-        stack: [{name:"Next.js"}, {name: "Tailwind.css"}],
-        image: "/assets/work/thumb1.png",
+        category: 'fullstack',
+        title: "FarmFlow",
+        description: "A web application for managing an animal farm. This platform streamlines farm operations, allowing users to track animal health, monitor inventory, manage schedules, and optimize overall farm productivity. I was in the front-end team.",
+        stack: [{name:"React"}, {name: "NestJs"}, {name: "Typescript"}, {name: "Tailwind CSS"}],
+        image: "/assets/work/thumb3.png",
+        live: "",
+        github: "",
+    },
+    {
+        num: '04',
+        category: 'fullstack',
+        title: "GRH",
+        description: "A desktop application for managing staff. This platform allows users to efficiently handle employee records, track attendance, enhancing overall organizational productivity.",
+        stack: [{name:"Java"}, {name: "MySQL"}],
+        image: "/assets/work/thumb4.png",
         live: "",
         github: "",
     },
@@ -67,15 +77,15 @@ const Work = () =>{
         >
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-                    <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-                       <div className="flex flex-col gap-[30px] h-[50%]">
+                    <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none ">
+                       <div className="flex flex-col gap-[30px] h-[50%] ">
                          {/*outline num  */}
                          <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                             {project.num}
                          </div>
-                         {/* project category */}
-                         <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                            {project.category} project
+                         {/* project title */}
+                         <h2 className="text-[42px] font-bold leading-none text-accent transition-all duration-500 ">
+                            {project.title} 
                          </h2>
                          {/* project description */}
                          <p className="text-white/60">{project.description}</p>

@@ -7,19 +7,19 @@ const services = [
     {
         num: '01',
         title: 'Web Development',
-        description: 'Enim duis reprehenderit ullamco do deserunt culpa enim culpa irure magna mollit minim ullamco.',
+        description: "I create web applications as a full-stack developer, utilizing modern technologies to build dynamic, responsive, and user-friendly applications from front-end to back-end.",
         href: "",
     },
     {
         num: '02',
         title: 'Mobile Development',
-        description: 'Enim duis reprehenderit ullamco do deserunt culpa enim culpa irure magna mollit minim ullamco.',
+        description: "I specialize in Flutter app dev, using its robust framework to craft cross-platform apps with native features and user-friendly interfaces for Android and iOS.",
         href: "",
     },
     {
         num: '03',
         title: 'Desktop Development',
-        description: 'Enim duis reprehenderit ullamco do deserunt culpa enim culpa irure magna mollit minim ullamco.',
+        description: "I create desktop applications using Java, leveraging its powerful libraries and frameworks to build robust, efficient, and user-friendly software solutions.",
         href: "",
     },
 ]
