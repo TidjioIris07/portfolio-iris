@@ -51,7 +51,7 @@ const projects = [
         title: "GRH",
         description: "A desktop application for managing staff. This platform allows users to efficiently handle employee records, track attendance, enhancing overall organizational productivity.",
         stack: [{name:"Java"}, {name: "MySQL"}],
-        image: "/assets/work/thumb4.png",
+        image: "/assets/work/Thumb4.png",
         live: "",
         github: "",
     },
