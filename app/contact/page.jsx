@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { motion } from "framer-motion";
@@ -19,6 +19,12 @@ const info = [
     title: "Email",
     description: "iristidjio@gmail.com"
   },
+  {
+    icon: <FaLinkedin />,
+    title: "Linkedin",
+    description: "R. Tidjio Iris RETSOFA"
+  },
+
 ];
 
 const Contact = () => {
@@ -81,7 +87,7 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Commodo quis Lorem in fugiat ad quis veniam dolore et.
+                You can send me a message here.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
