@@ -1,6 +1,6 @@
 "use client";
 
-import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaJava, FaGit, FaGithub} from "react-icons/fa";
+import {FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaPhp, FaJava, FaGitAlt, FaGithub} from "react-icons/fa";
 
 import {SiTailwindcss, SiNextdotjs, SiExpress, SiSpringboot, SiFlutter, SiMysql, SiSqlite, SiPostgresql, SiPostman} from "react-icons/si"
 
@@ -130,7 +130,7 @@ const skills = {
     ],
     skilllist3: [
         {
-            icon: <FaGit/>,
+            icon: <FaGitAlt/>,
             name: "Git",
         },
         {
@@ -148,6 +148,7 @@ import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+
 const Resume = () =>{
     return(
         <motion.div
@@ -346,7 +347,7 @@ const Resume = () =>{
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                             </div>
-                            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0 mt-[15px] ">
                                 {about.info.map((item,index)=> {
                                     return(
                                         <li
